@@ -3,6 +3,9 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
+dependencies = [
+  'numpy >= 1.16',
+]
 name = "vec2d"
 version = "0.0.1"
 authors = [
