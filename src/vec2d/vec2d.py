@@ -53,7 +53,7 @@ class Vec2D(numpy.lib.mixins.NDArrayOperatorsMixin):
     def y(self, value):
         self._y = value
 
-def normalize_vector(v: [np.ndarray[Number], Vec2D]) -> [np.ndarray[Number], Vec2D]:
+def normalize_vector(v: [np.ndarray[Number] | Vec2D]) -> [np.ndarray[Number] | Vec2D]:
     m = np.max(np.abs(v))
     if m == 0:
         return np.zeros(v.shape)
